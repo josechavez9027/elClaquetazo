@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/{any}', function () {
-    $path = public_path('angular/browser/index.html');
+    $path = public_path('angular/index.html');
     if (file_exists($path)) {
         return file_get_contents($path);
     }
