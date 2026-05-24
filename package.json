@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "ng build --configuration production",
+        "build": "Vite build",
         "dev": "vite"
     },
     "devDependencies": {
