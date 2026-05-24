@@ -3,8 +3,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "start": "ng serve",
-        "build": "ng build --configuration production"
+        "build": "vite build",
+        "dev": "vite"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
