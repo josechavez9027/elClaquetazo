@@ -5,9 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/{any}', function () {
     $path = public_path('angular/browser/index.html');
     
-    if (File::exists($path)) {
+    if (file_exists($path)) {
         return file_get_contents($path);
     }
     
-    return response()->json(['error' => 'Frontend no compilado o ruta no encontrada'], 404);
-})->where('any', '^(?!api).*$');
+    return abort(404, 'No se encontró el build de Angular en public/angular/browser');
+})->where('any', '.*');
