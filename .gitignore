@@ -6,6 +6,7 @@
 .phpactor.json
 .phpunit.result.cache
 node_modules/
+frontend
 /.fleet
 /.idea
 /.nova
